@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
 
   postgres:
@@ -93,7 +91,6 @@ services:
       - payflow-api
     restart: unless-stopped
 
-  # ── Observability (Phase 6) ─────────────────────────────────────────────
   prometheus:
     image: prom/prometheus:latest
     container_name: payflow-prometheus
