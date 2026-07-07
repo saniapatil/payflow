@@ -18,9 +18,7 @@ services:
     plan: free
     envVars:
       - key: SPRING_DATASOURCE_URL
-        fromDatabase:
-          name: payflow-db
-          property: connectionString
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
         fromDatabase:
           name: payflow-db
@@ -65,9 +63,7 @@ services:
     healthCheckPath: /actuator/health
     envVars:
       - key: SPRING_DATASOURCE_URL
-        fromDatabase:
-          name: payflow-db
-          property: connectionString
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
         fromDatabase:
           name: payflow-db
