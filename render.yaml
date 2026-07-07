@@ -10,7 +10,7 @@ services:
     plan: free
     ipAllowList: []
 
-  - type: pserv
+  - type: web
     name: payflow-worker
     runtime: docker
     dockerfilePath: ./payflow-worker/Dockerfile
