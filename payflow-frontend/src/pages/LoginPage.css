@@ -1,0 +1,96 @@
+.authcontainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #251309;
+    padding: 20px;
+}
+
+.authcard {
+    width: 100%;
+    max-width: 400px;
+    background: #F7F7F5;
+    border-radius: 20px;
+    padding: 36px 32px;
+}
+
+.authlogo {
+    margin: 0 0 28px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f17c23;
+    letter-spacing: 0.3px;
+}
+
+.authcard h1 {
+    margin: 0 0 6px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #251309;
+    letter-spacing: -0.5px;
+}
+
+.authsubtitle {
+    margin: 0 0 28px;
+    font-size: 14px;
+    color: #9A968C;
+}
+
+.autherror {
+    font-size: 13px;
+    color: #E5484D;
+    margin: -8px 0 16px;
+}
+
+.authinput {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #E2DED4;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.authinput:focus {
+    outline: none;
+    border-color: #f17c23;
+}
+
+.authbtn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #f17c23;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.authbtn:hover {
+    background: #fa8125;
+}
+
+.authbtn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.authfooter {
+    text-align: center;
+    margin: 24px 0 0;
+    font-size: 14px;
+    color: #9A968C;
+}
+
+.authfooter span {
+    color: #f17c23;
+    font-weight: 500;
+    cursor: pointer;
+}

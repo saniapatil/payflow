@@ -1,0 +1,165 @@
+.sheetOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 15, 26, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 100;
+}
+
+.sheetBox {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 24px 24px 0 0;
+    padding: 12px 24px 32px;
+    animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.sheetHandle {
+    width: 36px;
+    height: 4px;
+    background: #E2DED4;
+    border-radius: 4px;
+    margin: 0 auto 20px;
+}
+
+.sheetTitle {
+    margin: 0 0 18px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #7A7F8C;
+}
+
+.transferInput {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #E2DED4;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.transferInput:focus {
+    outline: none;
+    border-color: #f17c23;
+}
+
+.amountRow {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px 0 28px;
+}
+
+.rupeePrefix {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #9A968C;
+}
+
+.amountInput {
+    border: none;
+    outline: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #251309;
+    width: 200px;
+    text-align: left;
+}
+
+.capHint {
+    text-align: center;
+    font-size: 12px;
+    color: #9A968C;
+    margin: -20px 0 20px;
+}
+
+.confirmAmount {
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #251309;
+    margin: 8px 0 4px;
+}
+
+.confirmTo {
+    text-align: center;
+    font-size: 14px;
+    color: #9A968C;
+    margin: 0 0 24px;
+}
+
+.errorText {
+    font-size: 13px;
+    color: #E5484D;
+    margin: -8px 0 16px;
+}
+
+.sheetCta {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #f17c23;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sheetCta:hover {
+    background: #fa8125;
+}
+
+.sheetCta:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.backLink {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: none;
+    color: #9A968C;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.successBox {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.successMark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #E5F5EC;
+    color: #1FAA73;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.successText {
+    font-size: 14px;
+    color: #9A968C;
+    line-height: 1.6;
+    margin: 0 0 24px;
+}

@@ -1,0 +1,113 @@
+.landing-page {
+    min-height: 100vh;
+    background: #251309;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.content {
+    max-width: 420px;
+    width: 100%;
+}
+
+.brandLogo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f17c23;
+    letter-spacing: 0.3px;
+    margin: 0 0 28px;
+}
+
+.content h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    color: #F7F7F5;
+    letter-spacing: -1.2px;
+    line-height: 1.08;
+    margin: 0 0 18px;
+}
+
+.content p {
+    font-size: 15px;
+    color: #7A7F8C;
+    line-height: 1.65;
+    margin: 0 0 36px;
+    max-width: 340px;
+}
+
+.bottomlinks {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 56px;
+}
+
+.startbtn,
+.signinbtn {
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.startbtn {
+    background: #f17c23;
+    color: white;
+    border: none;
+}
+
+.startbtn:hover {
+    background: #fa8125;
+}
+
+.signinbtn {
+    background: transparent;
+    color: #F7F7F5;
+    border: 1px solid #2A2F3D;
+}
+
+.signinbtn:hover {
+    border-color: #3A3F4D;
+}
+
+.statsRow {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.statNum {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #F7F7F5;
+    margin: 0;
+    letter-spacing: -0.3px;
+}
+
+.statLabel {
+    font-size: 12px;
+    color: #7A7F8C;
+    margin: 4px 0 0;
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .bottomlinks {
+        flex-direction: column;
+    }
+
+    .startbtn,
+    .signinbtn {
+        width: 100%;
+        text-align: center;
+    }
+}

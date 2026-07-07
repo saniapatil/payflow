@@ -1,0 +1,215 @@
+.dashboardWrap {
+    min-height: 100vh;
+    background: #F7F7F5;
+}
+
+.balanceHero {
+    background: #251309;
+    padding: 20px 20px 32px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoText {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F7F7F5;
+    letter-spacing: -0.2px;
+}
+
+.profileBox {
+    position: relative;
+}
+
+.avatarCircle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f17c23;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.avatarCircle:hover {
+    background: #fa8125;
+}
+
+.profileDropdown {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 220px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    z-index: 50;
+}
+
+.profileName {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #251309;
+}
+
+.profileDetail {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #9A968C;
+}
+
+.logoutBtn {
+    width: 100%;
+    margin-top: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #FBE7E8;
+    color: #E5484D;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.logoutBtn:hover {
+    background: #f6d4d6;
+}
+
+.balanceBlock {
+    margin-top: 28px;
+}
+
+.balanceLabel {
+    margin: 0 0 6px;
+    font-size: 12px;
+    color: #7A7F8C;
+    letter-spacing: 0.3px;
+}
+
+.balanceAmount {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    color: #F7F7F5;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.dashboardBody {
+    background: #F7F7F5;
+    border-radius: 20px 20px 0 0;
+    margin-top: -16px;
+    padding: 20px 20px 40px;
+    position: relative;
+}
+
+.actionsRow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.sendBtn,
+.addMoneyBtn {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sendBtn {
+    background: #f17c23;
+    color: white;
+}
+
+.sendBtn:hover {
+    background: #fa8125;
+}
+
+.addMoneyBtn {
+    background: #EDEAE3;
+    color: #251309;
+}
+
+.addMoneyBtn:hover {
+    background: #E2DED4;
+}
+
+.quickContactsSection,
+.historySection {
+    margin-bottom: 28px;
+}
+
+.historySection {
+    margin-bottom: 0;
+}
+
+.sectionLabel {
+    margin: 0 0 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #9A968C;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .balanceAmount {
+        font-size: 36px;
+    }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.aiChatFab {
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #6C5CE7;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.35);
+    cursor: pointer;
+    z-index: 40;
+}
+
+.aiChatFab:hover {
+    background: #5b4bd6;
+}
+
+.aiChatFabIcon {
+    font-size: 22px;
+}
+
+.aiChatFabBadge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #0E9488;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 999px;
+    border: 2px solid #F7F7F5;
+}
